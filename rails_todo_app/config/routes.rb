@@ -2,6 +2,8 @@ RailsTodoApp::Application.routes.draw do
 
   root :to => 'welcome#index'
   get '/todos' => 'todos#index'
+  get 'todos/new' => 'todos#new'
+  post 'todos' => 'todos#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
